@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Dining Etiquette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 상단 헤더 -->
+    <header class="top-header">
+        <div class="header-content">
+            <div class="header-square"></div>
+            <h1 class="header-title">World Dining Etiquette</h1>
+        </div>
+    </header>
+
+    <!-- 타이틀 화면 -->
+    <div id="title-screen" class="screen active">
+        <div class="title-content">
+            <img src="map.png" alt="Map" class="title-map-image">
+            <img src="spoon.png" alt="Spoon" class="title-spoon-image">
+            <img src="chopsticks.png" alt="Chopsticks" class="title-chopsticks-image">
+            <img src="cheftable.png" alt="Cheftable" class="title-cheftable-image">
+            <h1>World Dining Etiquette</h1>
+            <p class="subtitle">각 나라의 식사 예절을 게임처럼 체험해보세요.</p>
+            <button id="start-btn" class="btn-primary">시작하기</button>
+        </div>
+    </div>
+
+    <!-- 지도 화면 -->
+    <div id="map-screen" class="screen">
+        <div class="map-container">
+            <h2>세계 지도</h2>
+            <div class="world-map">
+                <div class="country korea active" data-country="japan">
+                    <span>일본</span>
+                    <div class="stamp" id="japan-stamp" style="display: none;">✅</div>
+                </div>
+                <div class="country china active" data-country="china">
+                    <span>중국</span>
+                    <div class="stamp" id="china-stamp" style="display: none;">✅</div>
+                </div>
+                <div class="country-label">일본 완료 <span id="japan-complete" style="display: none;">✅</span></div>
+                <div class="country-label">중국 완료 <span id="china-complete" style="display: none;">✅</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
